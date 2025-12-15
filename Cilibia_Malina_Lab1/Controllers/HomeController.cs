@@ -13,10 +13,21 @@ namespace Cilibia_Malina_Lab1.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public string Index()
         {
-            return View();
+            return "bun venit!";
         }
+
+        public string salut()
+        {
+            return "buna ziua";
+        }
+
+        public string nume(string nume, int varsta)
+        {
+            return "Numele studentului este " + nume + " iar varsta este " + varsta;
+        }
+
 
         public IActionResult Privacy()
         {
